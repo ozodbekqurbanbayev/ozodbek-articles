@@ -130,6 +130,7 @@ padding: 12px 24px;
   width: 100%;
   max-width: 600px;
   padding: 54px;
+  background-color: #fff;
 }
 .latest-videos-heading {
   margin-top: 0;
@@ -140,7 +141,7 @@ padding: 12px 24px;
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #fff;
+  color: #222;
 }
 .latest-videos-divider {
   border: 0;
