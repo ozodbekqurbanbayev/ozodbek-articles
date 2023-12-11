@@ -140,6 +140,7 @@ padding: 12px 24px;
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: #fff;
 }
 .latest-videos-divider {
   border: 0;
@@ -178,6 +179,7 @@ margin-bottom: 10px;
   font-weight: 400;
   letter-spacing: 2px;
   font-family: 'Bebas Neue', sans-serif;
+
 }
 .item-latest-videos-link {
   display: inline-block;
