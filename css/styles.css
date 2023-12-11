@@ -5,6 +5,11 @@ html{
   scroll-behavior: smooth;
 
 }
+*:focus{
+  outline: 2px dashed #1e90ff;
+  outline-offset: 2px;
+  outline-style: 3px;
+}
 *,
 *::before
 *::after{
@@ -18,8 +23,9 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Arial" sans-serif;
-  background-color: #fff;
+ font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #222;
   color: #222;
 }
 img{
@@ -61,6 +67,7 @@ margin-right: auto;
   justify-content: center;
   align-items: center;
  width: 100%;
+ padding: 24px;
  max-width: 600px;
  background-image: url("../img/fon.jpg");
  background-repeat:no-repeat;
@@ -79,14 +86,26 @@ margin-right: auto;
  letter-spacing: 2px;
  color: #fff;
  line-height: normal;
+ font-weight: 400;
+ font-family: 'Bebas Neue', sans-serif;
 }
 .hero-link {
   display: inline-block;
+
   background-color: rgba(30, 144, 255, 1);
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.hero-link:hover{
+  background-color: rgba(30, 144, 255, 0.8);
+
+}
+.hero-link:active{
+  background-color: rgba(30, 144, 255, 0.6);
+
 }
 .hero-link-inner {
 display: flex;
@@ -106,9 +125,136 @@ padding: 12px 24px;
 
 
 }
-.hero-link-text {
+/* LATEST VIDEOS */
+.latest-videos {
+  width: 100%;
+  max-width: 600px;
+  padding: 54px;
+}
+.latest-videos-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.latest-videos-divider {
+  border: 0;
+height: 1px;
+margin-top: 24px;
+margin-bottom: 24px;
+background-color: #99999999;
+}
+.latest-videos-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  list-style: none;
+}
+.latest-videos-item:not(:last-child){
+margin-bottom: 10px;
+}
+/* ITEM-LATEST-VIDEOS */
+.item-latest-videos {
+  display: flex;
+  background-color: #fff;
+}
+.item-latest-videos-img {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.item-latest-videos-info {
+  padding: 16px;
+}
+.item-latest-videos-heading {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.item-latest-videos-link {
+  display: inline-block;
+  margin-bottom: 4px;
+  text-decoration: none;
+  color: #222;
+}
+.item-latest-videos-link:hover{
+  color: rgba(30, 144, 255, 1);
+
+}
+.item-latest-videos-link:active{
+ opacity: 0.6;
+
+}
+.item-latest-videos-meta {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: normal;
+  color: #888;
+}
+.item-latest-videos-published-at {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+.item-latest-videos-published-at::before{
+  content:"" ;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/soat.svg");
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 4px;
+
+}
+.item-latest-videos-views {
+  display: flex;
+  align-items: center;
+
+}
+.item-latest-videos-views::before{
+  content:"" ;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/korishlar_soni.svg");
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 4px;
+
 }
 
+/* LOAD-MORE-BUTTON */
+.load-more-button{
+display: block;
+width: 100%;
+padding: 12px;
+border: 0;
+font-size: 14px;
+line-height: normal;
+font-weight: 700;
+cursor: pointer;
+border-radius: 4px;
+background-color: rgba(30, 144, 255, 1);
+color: #fff;
+
+}
+.load-more-button:hover{
+  background-color: rgba(30, 144, 255, 0.8);
+
+}
+.load-more-button:active{
+  background-color: rgba(30, 144, 255, 0.6);
+}
 /* RETINA BG */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -121,3 +267,4 @@ only screen and (                min-resolution: 2dppx) {
   background-image: url("../img/fon@2x.jpg");
 }
 }
+
